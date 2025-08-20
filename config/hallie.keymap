@@ -156,6 +156,11 @@
             bindings = <&tog 4>;
             key-positions = <21 14>;
         };
+
+        winkey {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <37 40>;
+        };
     };
 
     keymap {
