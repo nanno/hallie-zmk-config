@@ -64,6 +64,21 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <16 19>;
         };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <32 33>;
+        };
+
+        bs2 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <20 21>;
+        };
     };
 
     keymap {
@@ -93,10 +108,10 @@
 
         raise_layer {
             bindings = <
-&none  &kp F2   &kp F3     &kp F4       &kp F5   &kp F6       &kp F7     &kp F8    &kp F9    &kp F10    &kp F11  &none
-&none  &kp INS  &kp PSCRN  &kp K_CMENU  &none    &none        &kp PG_UP  &kp HOME  &kp UP    &kp END    &none    &none
-&none  &none    &none      &none        &none    &none        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &none
-                           &mo ADJ      &mo LWR  &kp SPACE    &kp ENTER  &mo LWR   &mo RSE
+&none  &trans  &trans  &trans   &trans   &trans       &trans     &trans   &trans   &trans  &trans  &none
+&none  &trans  &trans  &trans   &trans   &trans       &trans     &trans   &trans   &trans  &trans  &none
+&none  &trans  &trans  &trans   &trans   &trans       &trans     &trans   &trans   &trans  &trans  &none
+                       &mo ADJ  &mo LWR  &kp SPACE    &kp ENTER  &mo LWR  &mo RSE
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW &inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
