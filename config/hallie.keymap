@@ -159,7 +159,7 @@
 
         winkey {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <37 40>;
+            key-positions = <40 38>;
         };
     };
 
