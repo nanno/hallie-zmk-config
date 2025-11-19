@@ -50,7 +50,7 @@
             key-positions = <0 1>;
         };
 
-        tilde {
+        grv {
             bindings = <&kp GRAVE>;
             key-positions = <1 2>;
         };
@@ -63,6 +63,71 @@
         del {
             bindings = <&kp DELETE>;
             key-positions = <9 10>;
+        };
+
+        bkslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <16 19>;
+        };
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <1 16 39 39>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <2 16 39>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <16 3 39>;
+        };
+
+        f4 {
+            bindings = <&kp F4>;
+            key-positions = <4 16 39>;
+        };
+
+        f5 {
+            bindings = <&kp F5>;
+            key-positions = <16 5 39>;
+        };
+
+        f6 {
+            bindings = <&kp F6>;
+            key-positions = <16 6 39>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <16 7 39>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <16 8 39>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <16 9 39>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <16 10 39>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <1 39 17>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <2 39 17>;
         };
     };
 
