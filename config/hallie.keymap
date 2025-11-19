@@ -21,6 +21,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define LWR 1
@@ -184,12 +185,12 @@
         };
 
         extra1 {
-                bindings = <
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
-                  &none &none &none &none &none &none
-                >;
+            bindings = <
+&none  &none  &none     &none     &none     &none    &none  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &none  &none
+&none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none    &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+&none  &none  &none     &none     &none     &none    &none  &none           &none           &none            &none  &none
+                        &none     &none     &none    &none  &none           &none
+            >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW &inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
