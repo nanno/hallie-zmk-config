@@ -129,6 +129,11 @@
             bindings = <&kp F12>;
             key-positions = <2 39 17>;
         };
+
+        mouse {
+            bindings = <&tog 4>;
+            key-positions = <14 21>;
+        };
     };
 
     keymap {
