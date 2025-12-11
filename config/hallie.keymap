@@ -32,6 +32,11 @@
 
 &mt { quick_tap_ms = <200>; };
 
+&mmv {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent = <1>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -130,12 +135,6 @@
             bindings = <&kp F12>;
             key-positions = <2 39 17>;
         };
-
-        switch_mouse {
-            bindings = <&tog 4>;
-            key-positions = <29 30>;
-            layers = <0>;
-        };
     };
 
     keymap {
@@ -145,7 +144,7 @@
             bindings = <
 &none  &kp Q           &kp W           &kp E             &kp R        &kp T          &kp Y        &kp U        &kp I              &kp O            &kp P              &none
 &none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G          &kp H        &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SQT  &none
-&none  &lt 2 Z         &kp X           &kp C             &kp V        &kp B          &kp N        &kp M        &kp COMMA          &kp DOT          &kp SLASH          &none
+&none  &lt 2 Z         &lt 4 X         &kp C             &kp V        &kp B          &kp N        &kp M        &kp COMMA          &kp DOT          &kp SLASH          &none
                                        &mo 3             &none        &lt 1 SPACE    &lt 1 SPACE  &none        &mo 2
             >;
 
@@ -187,10 +186,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans     &msc SCRL_LEFT  &msc SCRL_RIGHT   &trans    &trans  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &msc SCRL_UP    &trans
-&trans  &trans  &mkp MCLK  &mkp MB2        &mkp MB1          &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
-&trans  &trans  &trans     &trans          &mmv MOVE_Y(100)  &trans    &trans  &trans          &trans          &trans           &trans          &trans
-                           &trans          &trans            &trans    &trans  &trans          &trans
+&trans  &trans  &trans     &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans    &trans  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &msc SCRL_UP    &trans
+&trans  &trans  &mkp MCLK  &mkp MB2        &mkp MB1         &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
+&trans  &trans  &trans     &trans          &trans           &trans    &trans  &trans          &trans          &trans           &trans          &trans
+                           &trans          &trans           &trans    &trans  &trans          &trans
             >;
         };
     };
