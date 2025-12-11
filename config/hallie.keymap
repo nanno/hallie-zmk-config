@@ -15,6 +15,7 @@
 #define ZMK_BEHAVIORS_KEEP_TO
 #define ZMK_BEHAVIORS_KEEP_TOG
 #define ZMK_BEHAVIORS_KEEP_TRANS
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
 
 #include <dt-bindings/zmk/indicators.h>
 #include <behaviors.dtsi>
