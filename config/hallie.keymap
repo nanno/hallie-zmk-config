@@ -15,7 +15,8 @@
 #define ZMK_BEHAVIORS_KEEP_TO
 #define ZMK_BEHAVIORS_KEEP_TOG
 #define ZMK_BEHAVIORS_KEEP_TRANS
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 5
 
 #include <dt-bindings/zmk/indicators.h>
 #include <behaviors.dtsi>
@@ -34,7 +35,7 @@
 &mt { quick_tap_ms = <200>; };
 
 &mmv {
-    time-to-max-speed-ms = <300>;
+    time-to-max-speed-ms = <400>;
     acceleration-exponent = <1>;
 };
 
