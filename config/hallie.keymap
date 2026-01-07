@@ -77,66 +77,6 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <16 19>;
         };
-
-        f1 {
-            bindings = <&kp F1>;
-            key-positions = <1 16 39 39>;
-        };
-
-        f2 {
-            bindings = <&kp F2>;
-            key-positions = <2 16 39>;
-        };
-
-        f3 {
-            bindings = <&kp F3>;
-            key-positions = <16 3 39>;
-        };
-
-        f4 {
-            bindings = <&kp F4>;
-            key-positions = <4 16 39>;
-        };
-
-        f5 {
-            bindings = <&kp F5>;
-            key-positions = <16 5 39>;
-        };
-
-        f6 {
-            bindings = <&kp F6>;
-            key-positions = <16 6 39>;
-        };
-
-        f7 {
-            bindings = <&kp F7>;
-            key-positions = <16 7 39>;
-        };
-
-        f8 {
-            bindings = <&kp F8>;
-            key-positions = <16 8 39>;
-        };
-
-        f9 {
-            bindings = <&kp F9>;
-            key-positions = <16 9 39>;
-        };
-
-        f10 {
-            bindings = <&kp F10>;
-            key-positions = <16 10 39>;
-        };
-
-        f11 {
-            bindings = <&kp F11>;
-            key-positions = <1 39 17>;
-        };
-
-        f12 {
-            bindings = <&kp F12>;
-            key-positions = <2 39 17>;
-        };
     };
 
     keymap {
@@ -156,7 +96,7 @@
         number_layer {
             bindings = <
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6   &kp N7           &kp N8                 &kp N9                      &kp N0                       &none
-&none  &trans        &trans        &trans        &trans        &trans    &kp SEMICOLON  &mt RCTRL MINUS  &mt RIGHT_SHIFT EQUAL  &mt RIGHT_ALT LEFT_BRACKET  &mt RIGHT_GUI RIGHT_BRACKET  &none
+&none  &trans        &trans        &trans        &trans        &to 5     &kp SEMICOLON  &mt RCTRL MINUS  &mt RIGHT_SHIFT EQUAL  &mt RIGHT_ALT LEFT_BRACKET  &mt RIGHT_GUI RIGHT_BRACKET  &none
 &none  &trans        &trans        &trans        &trans        &trans    &kp BACKSLASH  &trans           &trans                 &trans                      &trans                       &none
                                    &trans        &trans        &trans    &trans         &trans           &trans
             >;
@@ -192,6 +132,15 @@
 &trans  &trans  &trans  &mkp MB2        &mkp MB1         &mkp MB3    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
 &trans  &trans  &trans  &trans          &trans           &trans      &trans  &trans          &trans          &trans           &trans          &trans
                         &trans          &trans           &trans      &trans  &trans          &trans
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F11  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
